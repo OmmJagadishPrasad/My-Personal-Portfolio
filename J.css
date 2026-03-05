@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1e1e1e;
+}
+.main-container{
+    width: 1200px;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    margin: auto;
+    padding-top: 40px;
+    color: #e0e0e0;
+    font-family: sans-serif;
+}
+.side-bar{
+    background-color: #2a2a2a;
+    border: #3a3a3a;
+    height: 65vh;
+    border-radius: 10px;
+    padding: 40px;
+    position: sticky;
+    top: 0px;
+}
+
+.profile{
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #3a3a3a;
+}
+.photo{
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid  rgb(69, 67, 67);
+    margin-bottom: 10px;
+}
+.profile p{
+    background-color: #1e1e1e;
+    color: #FFBF00;
+    font-size: 0.8rem;
+    border: 1px solid #3a3a3a;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.contact{
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 30px;
+}
+.contact a{
+    text-decoration: none;
+    color: #8f8ac9;
+}
+.contact h3{
+    color: #A0a0a0;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.location{
+    margin-bottom: 20px;
+}
+.social{
+    text-align: center;
+}
+.social img{
+    height: 40px;
+}
+.main-content{
+    background-color: #2a2a2a;
+    border: #3a3a3a;
+    border-radius: 10px;
+    padding: 25px;
+}
+.navigation{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    border-bottom: 2px solid #3a3a3a;
+}
+nav a{
+    text-decoration: none;
+    color: #8f8ac9;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+nav a:hover{
+    color: #FFBF00;
+}
+.yellow{
+    color: #FFBF00;
+}
+#about{
+    margin-left: 20px;
+}
+.main-content h2{
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+.line{
+    width: 80px;
+    height: 5px;
+    background-color: #FFBF00;
+    margin-bottom: 15px;
+}
+#about p{
+    line-height: 25px;
+    color: #A0a0a0;
+    text-align: justify;
+}
+#skills{
+    margin-left: 20px; 
+}
+#skills h3, .div{
+    display: inline-block;
+}
+#projects{
+    margin-left: 20px; 
+}
+#education{
+    margin-left: 20px; 
+    line-height: 30px;
+    color: #A0a0a0; 
+    position: relative;
+}
+.edu{
+    margin-left: 30px;
+}
+.liner{
+    position: absolute;
+    width: 2px;
+    top: 40px;
+    bottom: 0px;
+    left: 8px;
+    border: 1px solid #3a3a3a;
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #FFBF00;
+    position: absolute;
+    left: 0px;
+    z-index: 10;
+}
+#achievements{
+    margin-left: 20px;
+}
+.outer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+.inner-container{
+    height: 255px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.inner-container:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.certificate img{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px){
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 40px;
+        width: auto;
+    }
+    .side-bar{
+        position: static;
+    }
+    .outer-container{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .outer-container{
+        grid-template-columns: 1fr;
+    }
+    .inner-container{
+        margin-bottom: 10px;
+    }
+    .navigation nav{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
